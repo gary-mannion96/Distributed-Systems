@@ -1,5 +1,6 @@
 # Distributed-Systems
-4th year Software Development Distributed-Systems Project
+Name: Gary Mannion </br>
+Module: Distributed Systems
 
 ## Overview
 You are required to use the JAX-RS/Jersey, Java RMI and JAXB frameworks to develop a simple Car Hire
