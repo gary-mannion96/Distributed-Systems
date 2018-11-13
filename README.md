@@ -23,3 +23,8 @@ The Apache Tomcat® software is an open source implementation of the Java Servle
 <img width="300" src="http://www.codepep.com/wp-content/uploads/2017/01/24.jpg">
 
 The Java Remote Method Invocation (Java RMI) is a Java API that performs remote method invocation, the object-oriented equivalent of remote procedure calls (RPC), with support for direct transfer of serialized Java classes and distributed garbage-collection. The RMI allows an object to invoke methods on an object running in another JVM. The RMI provides remote communication between the applications using two objects stub and skeleton. 
+
+## JSP
+<img width="200" src="https://image.freepik.com/free-icon/jsp-open-file-format-with-java-logo_318-45209.jpg">
+
+A JSP page is a text document that contains two types of text: static data, which can be expressed in any text-based format (such as HTML, SVG, WML, and XML). Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications. JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
