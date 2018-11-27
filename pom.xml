@@ -5,13 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ie.gmit.sw</groupId>
-	<artifactId>DS_G00319609</artifactId>
+	<artifactId>DS_Project</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DS_G00319609</name>
+	<name>DS_Project</name>
 
 	<build>
-		<finalName>DS_G00319609</finalName>
+		<finalName>DS_Project</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
