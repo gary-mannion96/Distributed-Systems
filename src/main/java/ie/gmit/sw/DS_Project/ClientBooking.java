@@ -9,7 +9,7 @@ public class ClientBooking {
 
 	public static void main(String[] args) throws NotBoundException {
 		try {
-			// Gettting ther registryR
+			// Getting the registryR
 			Registry registry = LocateRegistry.getRegistry(null);
 
 			// Looking up registry for remote object

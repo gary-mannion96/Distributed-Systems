@@ -21,7 +21,7 @@ public class BookingServices {
 		// Bind the bookingService object to the registry
 		try {
 			Naming.rebind("databaseService", stub);
-			System.out.println("Server started...");
+			System.out.println("Server start!!!!");
 		} catch (Exception e) {
 			System.out.println("Server error: " + e);
 		}

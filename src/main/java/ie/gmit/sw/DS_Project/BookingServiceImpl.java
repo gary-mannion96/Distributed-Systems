@@ -10,7 +10,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookingServiceImpl extends UnicastRemoteObject implements BookingInterface{
+public class BookingServiceImpl extends UnicastRemoteObject implements BookingInterface {
+	
 	String url = "jdbc:mysql://localhost:3306/bookings";
 	String username = "gary";
 	String password = "gary";
@@ -31,16 +32,16 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 
 	}
 
-	// Shows all current bookings
+	// All Bookings
 	public List<Booking> getBookings() {
 
 		List<Booking> bookings = new ArrayList<>();
 
-		// Create the sql statement we went to execute on our
+		// Create the sql statement 
 		System.out.println(url);
 		String sql = "select * from bookings;";
 
-		// Execute the statement
+		// try/catch
 		try {
 			Statement statement = connection.createStatement();
 			System.out.println(statement);
@@ -60,7 +61,7 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 		return bookings;
 	}
 
-	// Shows bookings with a specified ID
+	// Specific bookings
 	@Override
 	public Booking getBooking(int orderID) throws RemoteException {
 
@@ -69,7 +70,7 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 		 * System.out.println("Booking found!"); return booking; } else { return null; }
 		 * }
 		 */
-		System.out.println("STUB INVOCATION!");
+		System.out.println("ERROR!!!!");
 
 		return null;
 
@@ -83,7 +84,7 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 		String sql = "insert into bookings(id, name, FirstName) VALUES ('1', 'Gary', 'Mannion');";
 
 		System.out.println("STUB INVOCATION!");
-		// Execute the statement
+		
 		try {
 			Statement statement = connection.createStatement();
 			System.out.println(statement);
@@ -94,7 +95,7 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 				System.out.println(rs);
 			}
 		} catch (SQLException e) {
-			System.out.println("SQL Error: " + e);
+			System.out.println("MySQL Error: " + e);
 		}
 	}
 

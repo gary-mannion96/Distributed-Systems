@@ -4,12 +4,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
 import java.rmi.RemoteException;
 import java.sql.SQLException;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.List;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 
@@ -27,11 +25,11 @@ public class BookingResources {
 	@Path("showAllBookings")
 	@Produces(MediaType.APPLICATION_XML)
 	public List<Booking> getBookings() {
-		System.out.println("Inside getBookings!");
+		System.out.println("Bookings!!!!");
 		return bookingServiceImpl.getBookings();
 	}
 
-	// Creates a booking
+	// Create a booking
 	@POST
 	@Path("createBooking")
 	public Booking createBooking(Booking booking1) {
@@ -41,11 +39,11 @@ public class BookingResources {
 			System.out.println("Resource Error: " + e);
 		}
 
-		// Return the createdBooking
+		// Return Booking
 		return booking1;
 	}
 
-	// Shows bookings with a specified ID
+	// Show Specific Booking
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("booking/{orderID}")

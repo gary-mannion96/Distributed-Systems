@@ -17,9 +17,7 @@
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>2.7</version>
-
 				</plugin>
-
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -33,11 +31,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-
-
 	</dependencyManagement>
-
-
 
 	<dependencies>
 		<dependency>
@@ -62,13 +56,9 @@
 		</dependency>
 
 		<dependency>
-
 			<groupId>org.glassfish.jersey.core</groupId>
-
 			<artifactId>jersey-client</artifactId>
-
 			<version>2.26</version>
-
 		</dependency>
 
 		<dependency>
@@ -86,13 +76,9 @@
 
 
 		<dependency>
-
 			<groupId>org.glassfish.jersey.inject</groupId>
-
 			<artifactId>jersey-hk2</artifactId>
-
 			<version>2.26</version>
-
 		</dependency>
 
 	</dependencies>
