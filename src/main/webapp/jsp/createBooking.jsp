@@ -10,7 +10,5 @@
 			<td colspan="2"><input type="submit" value="Add" /></td>
 		</tr>
 	</table>
-	
 	<a href="/">Home</a>
-
 </body>
