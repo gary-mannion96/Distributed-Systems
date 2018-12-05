@@ -7,7 +7,7 @@
 	<h1>Create Booking</h1>
 	<table>
 		<tr>
-			<td colspan="2"><input type="submit" value="Add" /></td>
+			<td colspan="2"><input type="submit" value="Create" /></td>
 		</tr>
 	</table>
 	<a href="/">Home</a>

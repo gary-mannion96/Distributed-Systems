@@ -79,7 +79,7 @@ public class BookingServiceImpl extends UnicastRemoteObject implements BookingIn
 	// Create a booking
 	@Override
 	public void createBooking(Booking booking) throws RemoteException {
-		// Create the sql statement we went to execute on our
+		// Create the sql statement we want to execute
 		System.out.println(url);
 		String sql = "insert into bookings(id, name, FirstName) VALUES ('1', 'Gary', 'Mannion');";
 

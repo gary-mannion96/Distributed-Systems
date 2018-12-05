@@ -6,7 +6,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.rmi.RemoteException;
 import java.sql.SQLException;
-//import java.util.Arrays;
 import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -22,7 +21,7 @@ public class BookingResources {
 
 	// Shows all current bookings
 	@GET
-	@Path("showAllBookings")
+	@Path("showBookings")
 	@Produces(MediaType.APPLICATION_XML)
 	public List<Booking> getBookings() {
 		System.out.println("Bookings!!!!");
@@ -32,15 +31,15 @@ public class BookingResources {
 	// Create a booking
 	@POST
 	@Path("createBooking")
-	public Booking createBooking(Booking booking1) {
+	public Booking createBooking(Booking booking) {
 		try {
-			bookingServiceImpl.createBooking(booking1);
+			bookingServiceImpl.createBooking(booking);
 		} catch (RemoteException e) {
 			System.out.println("Resource Error: " + e);
 		}
 
 		// Return Booking
-		return booking1;
+		return booking;
 	}
 
 	// Show Specific Booking
@@ -55,5 +54,4 @@ public class BookingResources {
 		}
 		return null;
 	}
-
 }
