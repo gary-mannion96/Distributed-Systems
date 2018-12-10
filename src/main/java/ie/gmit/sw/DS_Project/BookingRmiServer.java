@@ -6,13 +6,13 @@ import java.rmi.server.UnicastRemoteObject;
 
 // Booking Service
 // This class serves as the gateway for our booking client to 
-public class BookingRMIServer
+public class BookingRmiServer
 {
 	public static void main(String[] args) throws Exception
 	{
 		
 		// Create instance of bookingService implementation
-		BookingRMIServerImpl bookingServiceImpl = new BookingRMIServerImpl();
+		BookingRmiServerImpl bookingServiceImpl = new BookingRmiServerImpl();
 		
 		// Export the implementation
 		System.setProperty("java.rmi.server.hostname","127.0.0.1:1099");

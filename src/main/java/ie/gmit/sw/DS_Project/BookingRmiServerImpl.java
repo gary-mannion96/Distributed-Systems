@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class BookingRMIServerImpl extends UnicastRemoteObject implements BookingRMIServerInterface
+public class BookingRmiServerImpl extends UnicastRemoteObject implements BookingInterface
 {
 	// Variables
 	String url = "jdbc:mysql://localhost:3306/bookings";
@@ -23,7 +23,7 @@ public class BookingRMIServerImpl extends UnicastRemoteObject implements Booking
 
 	private static final long serialVersionUID = 1L;
 
-	public BookingRMIServerImpl() throws RemoteException, SQLException
+	public BookingRmiServerImpl() throws RemoteException, SQLException
 	{
 		// Setup connection to database
 		try
@@ -41,7 +41,6 @@ public class BookingRMIServerImpl extends UnicastRemoteObject implements Booking
 	// Shows all current bookings
 	public List<Booking> getBookings()
 	{
-		// http://localhost:8080/DistributedSystemsG00337490/webapi/BookingSystem/showAllBookings
 		List<Booking> bookings = new ArrayList<>();
 		
 		System.out.println("Receiving booking");

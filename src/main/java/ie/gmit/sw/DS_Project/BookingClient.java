@@ -16,7 +16,7 @@ public class BookingClient
 		try
 		{
 			// Create stub
-			BookingRMIServerInterface bookingServiceStub = new BookingRMIServerImpl();
+			BookingInterface bookingServiceStub = new BookingRmiServerImpl();
 
 			// Bind the bookingServiceStub to the databaseServuce
 			Naming.rebind("databaseService", bookingServiceStub);

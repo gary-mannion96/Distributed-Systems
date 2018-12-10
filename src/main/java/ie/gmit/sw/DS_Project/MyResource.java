@@ -1,22 +1,71 @@
 package ie.gmit.sw.DS_Project;
 
-import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("myresource")
-public class MyResource {
+import ie.gmit.sw.DS_Project.Booking;
+import ie.gmit.sw.DS_Project.BookingRmiServerImpl;
 
-    /**
-     * Method handling HTTP GET requests. The returned object will be sent
-     * to the client as "text/plain" media type.
-     *
-     * @return String that will be returned as a text/plain response.
-     */
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
-        return "Got it!";
-    }
+import java.rmi.RemoteException;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+
+
+@Path("BookingSystem")
+public class MyResource {
+	// Variables
+	private BookingRmiServerImpl bookingServiceImpl;
+
+	public MyResource() throws SQLException, RemoteException
+	{
+		bookingServiceImpl = new BookingRmiServerImpl();
+	}
+		
+	// Shows all current bookings
+	@GET
+	@Path("showAllBookings")
+	@Produces(MediaType.APPLICATION_XML)
+	public List<Booking> getBookings() 
+	{
+		return bookingServiceImpl.getBookings();
+	}
+	
+	// Creates a booking
+	@POST
+	@Path("createBooking")
+	public Booking createBooking(Booking booking1)
+	{
+		try
+		{
+			bookingServiceImpl.createBooking(booking1);
+		} 
+		catch (RemoteException e)
+		{
+			System.out.println("Resource Error: " + e);
+		}
+		return booking1;
+	}
+	
+	// Shows bookings with a specified ID
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
+	@Path("booking/{orderID}")
+	public Booking getBooking(@PathParam("orderID") int orderID) 
+	{
+		try
+		{
+			return bookingServiceImpl.getBooking(orderID);
+		} 
+		catch (RemoteException e)
+		{
+			System.out.println("Resource Error: " + e);
+		}
+		return null;
+	}
 }
