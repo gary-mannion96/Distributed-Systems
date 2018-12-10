@@ -1,6 +1,10 @@
 # Distributed-Systems
-Name: Gary Mannion </br>
-Module: Distributed Systems
+| Project Details   |     |
+| --- | --- |
+| **Course** | BSc (Hons) in Software Development  |
+| **Module** |  Distributed Systems |
+| **Student** | Gary Mannion G00319609 |
+| **Lecture** | Patrick Mannion |
 
 ## Overview
 You are required to use the JAX-RS/Jersey, Java RMI and JAXB frameworks to develop a simple Car Hire
