@@ -12,26 +12,22 @@ public class BookingClient
 
 	public static void main(String[] args) throws NotBoundException, RemoteException
 	{
-
+		// try/catch
 		try
 		{
-
 			// Create stub
 			BookingRMIServerInterface bookingServiceStub = new BookingRMIServerImpl();
 
 			// Bind the bookingServiceStub to the databaseServuce
 			Naming.rebind("databaseService", bookingServiceStub);
 
-			// Remote methods
-			// bookingServiceStub.getBooking(1);
+			// Remote method
 			bookingServiceStub.createBooking(null);
 
 		}
 		catch (Exception e)
 		{
-			System.out.println("Could not find registry: " + e);
+			System.out.println("Error here!!! " + e);
 		}
-
 	}
-
 }
