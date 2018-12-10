@@ -2,10 +2,8 @@ package ie.gmit.sw.DS_Project;
 
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
-import java.rmi.server.UnicastRemoteObject;
 
 // Booking Service
-// This class serves as the gateway for our booking client to 
 public class BookingRmiServer
 {
 	public static void main(String[] args) throws Exception

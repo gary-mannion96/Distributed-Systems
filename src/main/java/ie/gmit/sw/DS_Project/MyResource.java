@@ -10,7 +10,6 @@ import ie.gmit.sw.DS_Project.BookingRmiServerImpl;
 
 import java.rmi.RemoteException;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.ws.rs.GET;
