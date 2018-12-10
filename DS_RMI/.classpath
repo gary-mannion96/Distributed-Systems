@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/eclipselink.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/javax.json-1.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/javax.json-api_1.1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/javax.xml.bind_2.2.12.v201410011542.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/jaxb-core_2.2.11.v201407311112.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/ds_wk3_DataBindingLab/ds_wk3_DataBindingLab/lib/jaxb-xjc_2.2.11.v201407311112.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Gary Mannion/Downloads/mysql-connector-java-8.0.13.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
