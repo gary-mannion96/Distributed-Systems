@@ -8,6 +8,11 @@
 </head>
 <body>
 	<h2>All Bookings</h2>
-
+	
+	<form action="webapi/myresource/showOrder" method="GET">
+	
+	<input type="submit" value="update" />
+	<input type="submit" value="delete" />
+</form>
 </body>
 </html>

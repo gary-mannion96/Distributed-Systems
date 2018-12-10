@@ -4,6 +4,7 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 import java.rmi.registry.LocateRegistry;
 
+// setup to interact with the database
 public class ServiceSetup {
 	public static void main(String[] args) throws Exception {
 		// Set an instance of DatabaseService

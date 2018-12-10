@@ -62,26 +62,5 @@ public class DBServiceImpl extends UnicastRemoteObject implements DatabaseServic
 		
 	}
 	
-/*	public void create() throws RemoteException, SQLException {
-		System.out.println("In read");
-
-		stmt = conn.createStatement();
-
-		List<Bookings> List = new ArrayList<Bookings>();
-		String strSelect = "select * from orders";
-
-		ResultSet rset = stmt.executeQuery(strSelect);
-
-		while (rset.next()) { 
-			int OrderID = rset.getInt("OrderID");
-			Date Date = rset.getDate("Date");
-			int cust = rset.getInt("CustID");
-			int car = rset.getInt("CarID");
-			
-			Bookings b = new Bookings(OrderID, Date,cust,car);
-			List.add(b);
-		}
-		return List;
-	}*/
 
 }
