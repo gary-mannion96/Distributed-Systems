@@ -54,8 +54,8 @@ public class Booking {
 
 	@Override
 	public String toString() {
-		return "Booking [firstName=" + firstName + ", lastName=" + lastName + ", orderCost=" + orderCost + ", orderID="
-				+ orderID + ", carName=" + carName + ", carRegistration=" + carRegistration + "]";
+		return "Booking [firstName=" + firstName + ", lastName=" + lastName + ", orderID="
+				+ orderID + ", carMake=" + carMake + ", carReg=" + carReg + "]";
 	}
 
 }

@@ -26,9 +26,9 @@ public class MyResource {
 		bookingServiceImpl = new BookingRmiServerImpl();
 	}
 		
-	// Shows all current bookings
+	// Shows all current bookings/update
 	@GET
-	@Path("showAllBookings")
+	@Path("updateBooking")
 	@Produces(MediaType.APPLICATION_XML)
 	public List<Booking> getBookings() 
 	{
@@ -38,17 +38,17 @@ public class MyResource {
 	// Creates a booking
 	@POST
 	@Path("createBooking")
-	public Booking createBooking(Booking booking1)
+	public Booking createBooking(Booking booking)
 	{
 		try
 		{
-			bookingServiceImpl.createBooking(booking1);
+			bookingServiceImpl.createBooking(booking);
 		} 
 		catch (RemoteException e)
 		{
 			System.out.println("Resource Error: " + e);
 		}
-		return booking1;
+		return booking;
 	}
 	
 	// Shows bookings with a specified ID
