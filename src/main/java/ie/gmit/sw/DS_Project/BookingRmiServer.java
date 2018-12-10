@@ -11,11 +11,9 @@ public class BookingRmiServer
 		
 		// Create instance of bookingService implementation
 		BookingRmiServerImpl bookingServiceImpl = new BookingRmiServerImpl();
-		
-		// Export the implementation
 		System.setProperty("java.rmi.server.hostname","127.0.0.1:1099");
 
-		// Start the RMI Registry 
+		// Start the Registry 
 		try 
 		{
 			LocateRegistry.createRegistry(1099);

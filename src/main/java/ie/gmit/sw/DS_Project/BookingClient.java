@@ -14,8 +14,6 @@ public class BookingClient
 		{
 			// Create stub
 			BookingInterface bookingServiceStub = new BookingRmiServerImpl();
-
-			// Bind the bookingServiceStub to the databaseServuce
 			Naming.rebind("databaseService", bookingServiceStub);
 
 			// Remote method

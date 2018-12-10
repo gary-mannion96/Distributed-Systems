@@ -7,10 +7,9 @@ public class Booking {
 	// Variables
 	private String firstName;
 	private String lastName;
-	private double orderCost;
 	private int orderID;
-	private String carName;
-	private String carRegistration;
+	private String carMake;
+	private String carReg;
 
 	// Getters and Setters
 	public String getFirstName() {
@@ -29,14 +28,6 @@ public class Booking {
 		this.lastName = lastName;
 	}
 
-	public double getOrderCost() {
-		return orderCost;
-	}
-
-	public void setOrderCost(double orderCost) {
-		this.orderCost = orderCost;
-	}
-
 	public int getOrderID() {
 		return orderID;
 	}
@@ -45,20 +36,20 @@ public class Booking {
 		this.orderID = orderID;
 	}
 
-	public String getCarName() {
-		return carName;
+	public String getcarMake() {
+		return carMake;
 	}
 
-	public void setCarName(String carName) {
-		this.carName = carName;
+	public void setCarMake(String carMake) {
+		this.carMake = carMake;
 	}
 
-	public String getCarRegistration() {
-		return carRegistration;
+	public String getCarReg() {
+		return carReg;
 	}
 
-	public void setCarRegistration(String carRegistration) {
-		this.carRegistration = carRegistration;
+	public void setCarReg(String carReg) {
+		this.carReg = carReg;
 	}
 
 	@Override

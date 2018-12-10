@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gmit="http://sw.gmit.ie/Bookings/" targetNamespace="http://sw.gmit.ie/Bookings/" elementFormDefault="qualified">
+<xsd:element name='comment' type='xsd:string'/>
+
+<xsd:simpleType name="booking">
+	<xsd:restriction base="xsd:string">
+	</xsd:restriction>
+</xsd:simpleType>
+
+	<xsd:complexType name='Customer'>
+		<xsd:annotation>
+			<xsd:documentation>
+				Customer XML
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name='firstName' type='xsd:string' />
+			<xsd:element name='lastName' type='xsd:string' />
+			<xsd:element name='ID' type='xsd:int' />
+			<xsd:element name='insurance' type='xsd:int' />
+			<xsd:element name='address' type='xsd:string' />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
