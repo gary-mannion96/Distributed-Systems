@@ -6,7 +6,7 @@
 //
 
 
-package ie.gmit.sw.Jersey;
+package ie.gmit.sw.rmi;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

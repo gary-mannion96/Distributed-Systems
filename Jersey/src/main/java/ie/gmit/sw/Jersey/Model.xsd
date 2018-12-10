@@ -4,14 +4,15 @@
 	xmlns:tns="http://www.example.org/generateSchema"
 	elementFormDefault="qualified">
 
-	<element name="Order">
+	<element name="bookings">
 		<complexType>
 			<sequence>
-				<element name="OrderID" type="int"></element>
-				<element name="OrderNumber" type="int"></element>
-				<element name="Date" type="date"></element>
-				<element name="car" type="int"></element>
-				<element name="cust" type="int"></element>
+				<element name="booking_ID" type="int"></element>
+				<element name="name" type="string"></element>
+				<element name="start_date" type="string"></element>
+				<element name="end_date" type="string"></element>
+				<element name="carmake" type="string"></element>
+				<element name="carreg" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
